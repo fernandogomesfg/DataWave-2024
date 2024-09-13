@@ -46,24 +46,20 @@ st.markdown("##")
 # Top KPI's
 valor_total_transporte = int(df_selection['Valor do Frete (MT)'].sum())
 total_cubagem = df_selection['Cubagem'].sum()
-total_peso_bruto = df_selection['Peso Bruto (kg)'].sum()
 
 # Formatando os valores com separadores de milhares
 valor_total_transporte_formatado = "{:,}".format(valor_total_transporte)
 total_cubagem_formatado = "{:,.2f}".format(total_cubagem)
-total_peso_bruto_formatado = "{:,.2f}".format(total_peso_bruto)
 
-left_column, middle_column, right_column = st.columns(3)
+left_column, right_column = st.columns(2)
 
 with left_column:
     st.subheader('Custo - Transporte')
     st.subheader(f"{valor_total_transporte_formatado} MZN")
-with middle_column:
+with right_column:
     st.subheader('Cubagem')
     st.subheader(f"{total_cubagem_formatado} m³")
-with right_column:
-    st.subheader('Peso Bruto')
-    st.subheader(f"{total_peso_bruto_formatado} kg")
+
 
 st.markdown("---")
 
@@ -155,4 +151,4 @@ st.markdown("### On-Time Delivery (OTD)")
 # Exibir o gráfico tipo manômetro
 st.plotly_chart(fig_manometro)
 
-st.dataframe(df_selection)
+# st.dataframe(df_selection)

@@ -5,18 +5,17 @@ import folium
 from streamlit_folium import st_folium
 from folium.plugins import HeatMap
 
-# Título da Aplicação
-st.title('Análise de Eventos de Acidentes em Moçambique')
+
+st.title('🚧 Análise de Acidentes na Cidade de Maputo')
 
 df = pd.read_csv('./data/dataset_acidentes.csv', sep=',', encoding='latin1')
 
-# 1. Quantificação do Total de Eventos
-st.subheader('Quantificação do Total de Eventos')
+# Quantificação do Total de Eventos
+st.subheader('Quanto acidentes foram registrados?')
 total_eventos = df.shape[0]
 st.write(f"O total de eventos registrados é: {total_eventos}")
 
 
-# Dados
 top_causas = df['causa_acidente'].value_counts().head(5).reset_index()
 top_causas.columns = ['Causa do Acidente', 'Número de Ocorrências']
 
@@ -31,7 +30,7 @@ fig = px.bar(
     color_continuous_scale=px.colors.sequential.Plasma  # Escolha uma paleta de cores
 )
 
-# Atualizações do layout
+#   layout
 fig.update_xaxes(
     tickangle=45,
     title_font_size=14
@@ -53,13 +52,12 @@ fig.update_layout(
 # Adicionar rótulos de valor nas barras
 fig.update_traces(
     texttemplate='%{y}',
-    textposition='outside',
+    textposition='auto',
     marker=dict(line=dict(color='black', width=1))  # Adiciona borda preta às barras
 )
 
 # Mostrar o gráfico
 st.plotly_chart(fig)
-
 
 
 # Gerar o mapa base
@@ -75,9 +73,8 @@ HeatMap(heat_data, radius=8).add_to(m)
 st_folium(m, width=700, height=500)
 
 
-
-# 5. Ocorrências com Mais de 3 Óbitos
+# Ocorrências com Mais de 3 Óbitos
 st.subheader('Ocorrências com Mais de 3 Óbitos')
-ocorrencias_3_obitos = df[df['mortos'] > 3]
+ocorrencias_3_obitos = df[df['mortos'] > 5]
 st.write(f"Total de ocorrências com mais de 3 óbitos: {ocorrencias_3_obitos.shape[0]}")
 st.dataframe(ocorrencias_3_obitos[['data', 'hora', 'causa_acidente', 'mortos', 'latitude', 'longitude']])

@@ -9,7 +9,7 @@ about_page = st.Page(
 
 transport_dash = st.Page(
     page="views/transport_dash.py",
-    title="Dashboard ",
+    title="Frete e Logística",
     icon="",
 )
 
@@ -19,13 +19,32 @@ acidentes_dash = st.Page(
     icon="",
 )
 
+rede_transporte = st.Page(
+    page="views/rede_transporte.py",
+    title="Rede de Transporte ",
+    icon="",
+)
+
+acessibilidade = st.Page(
+    page="views/acessibilidade.py",
+    title="Acessibilidade",
+    icon="",
+)
+
+obrigado = st.Page(
+    page="views/obrigado.py",
+    title="Fim",
+    icon="",
+)
+
 # Navigation Section
-pg = st.navigation(pages=[about_page, transport_dash, acidentes_dash])
+pg = st.navigation(pages=[about_page, transport_dash, acidentes_dash, rede_transporte, acessibilidade, obrigado])
 
 pg = st.navigation(
     {
-        "Info": [about_page],
-        "Projects": [transport_dash, acidentes_dash]
+        "Info": [about_page, rede_transporte],
+        "Projects": [transport_dash, acidentes_dash, acessibilidade],
+        "Obrigado": [obrigado]
     }
 )
 
