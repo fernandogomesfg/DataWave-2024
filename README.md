@@ -15,6 +15,14 @@ Este projecto explora dados de transporte e frete, oferecendo insights sobre cus
 
 A aplicação é construída com **Streamlit** e permite interação através de filtros dinâmicos, e pode ser acessado pelo [link](https://datawave2024.streamlit.app/transport_dash)
 
+#### Imagens das Análises
+
+![Análise de Transporte e Logística_ Visão Geral de Frete e Viagens · Streamlit_page-0001 (1)](https://github.com/user-attachments/assets/55edb8cf-056d-4057-94b8-2c1174d60f4d)
+
+
+![Análise de Transporte e Logística_ Visão Geral de Frete e Viagens · Streamlit2_page-0001 (1)](https://github.com/user-attachments/assets/5682662c-7ff9-41c0-bf6d-8441239ccf01)
+
+
 ### Projecto Análise de Acidentes na Cidade de Maputo
 
 Este projecto analisa os dados de acidentes ocorridos na cidade de Maputo, oferecendo visualizações e insights sobre causas, localização e gravidade dos eventos. Utilizando **Streamlit**, **Pandas**, **Plotly** e **Folium**, o projecto apresenta:
