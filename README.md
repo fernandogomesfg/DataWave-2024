@@ -13,7 +13,7 @@ Este projecto explora dados de transporte e frete, oferecendo insights sobre cus
 - **Desempenho de Transporte**: Distribuição de status de entregas (no prazo/atrasado) e atrasos por transportadora.
 - **On-Time Delivery (OTD)**: Cálculo da pontualidade das entregas (% de entregas no prazo), com visualização em gráfico de manômetro.
 
-A aplicação é construída com **Streamlit** e permite interação através de filtros dinâmicos.
+A aplicação é construída com **Streamlit** e permite interação através de filtros dinâmicos, e pode ser acessado pelo [link](https://datawave2024.streamlit.app/transport_dash)
 
 ### Projecto Análise de Acidentes na Cidade de Maputo
 
@@ -24,7 +24,7 @@ Este projecto analisa os dados de acidentes ocorridos na cidade de Maputo, ofere
 - **Geolocalização dos Eventos**: Mapa de calor exibindo a concentração de acidentes na cidade de Maputo.
 - **Ocorrências com Mais de 3 Óbitos**: Tabela filtrada com detalhes de acidentes que resultaram em mais de 3 fatalidades.
 
-O projeto facilita a análise interativa, permitindo explorar padrões e insights geoespaciais críticos.
+O projeto facilita a análise interativa, permitindo explorar padrões e insights geoespaciais críticos, e pode ser acessado pelo [link](https://datawave2024.streamlit.app/acidentes_dash)
 
 ### Projecto Análise de Acessibilidade a Pé
 
