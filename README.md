@@ -34,6 +34,13 @@ Este projecto analisa os dados de acidentes ocorridos na cidade de Maputo, ofere
 
 O projeto facilita a análise interativa, permitindo explorar padrões e insights geoespaciais críticos, e pode ser acessado pelo [link](https://datawave2024.streamlit.app/acidentes_dash)
 
+#### Imagens das Análises
+
+![Acidentes · Streamlit_page-0001 (1)](https://github.com/user-attachments/assets/4c6c015e-f8c0-40fb-beb8-aab94cba93d0)
+
+![Acidentes · Streamlit2_page-0001 (1)](https://github.com/user-attachments/assets/83aa214e-8e58-414d-8730-cbc3e4935b9a)
+
+
 ### Projecto Análise de Acessibilidade a Pé
 
 Este projecto visa analisar a acessibilidade a pé em diferentes áreas, ajudando a identificar regiões com limitações no acesso ao transporte público e sugerindo melhorias. Utilizando **QGIS**, o projecto apresenta um mapa:
